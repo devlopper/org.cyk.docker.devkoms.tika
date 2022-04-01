@@ -7,5 +7,5 @@ else
   echo "Container cyk-tika has been removed."
 fi
 
-sudo docker docker create --name cyk-tika -m 2G --restart always -v ${pwd}:/config -v /home/kwordz/files:/home/kwordz/files cyk/logicalspark/tika:2.3.0 -c ./config.xml
+sudo docker create --name cyk-tika -m 2G --restart always -v ${pwd}:/config -v /home/kwordz/files:/home/kwordz/files cyk/logicalspark/tika:2.3.0 -c ./config.xml
 sudo docker start cyk-tika
