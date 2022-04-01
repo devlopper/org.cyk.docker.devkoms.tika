@@ -1,3 +1,5 @@
+git fetch
+git reset --hard origin
 sudo docker build -t "cyk/logicalspark/tika:2.3.0" .
 
 if [ -z `docker ps -aq --filter "name=cyk-tika"` ]; then
